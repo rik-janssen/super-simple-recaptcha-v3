@@ -10,8 +10,8 @@ function bcRECV_admin_menu_recaptcha() {
 	// https://codex.wordpress.org/Adding_Administration_Menus
     add_submenu_page( 
         'options-general.php', 
-        'Recaptcha V3', 
-        'Recaptcha V3', 
+        'Recaptcha', 
+        'Recaptcha', 
         'manage_options', 
         'bcRECV_recaptcha', 
         'bcRECV_function_for_recaptcha'  // this should correspond with the function name

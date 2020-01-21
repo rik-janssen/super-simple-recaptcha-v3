@@ -47,6 +47,7 @@ function bcRECV_settings_register() {
 	
 	// adding the information to the database as options
     register_setting( $setting_name, 'bcRECV_google_recaptcha', $args_text ); // textarea
+    register_setting( $setting_name, 'bcRECV_google_recaptcha_label', $args_int ); // textarea
 
 	
 }
@@ -71,6 +72,28 @@ function bcRECV_input_field($arg){
 <?php	
 }
 
+
+/* ---------------------------------------- */
+/* This one is a check button for the wpadm */
+
+function bcRECV_check_input($arg, $label=''){
+	if ($arg['selected']==''){
+		$arg['selected']=0;
+	}
+?>
+<div class="bcAGGT_check_wrapper">
+	<label>
+		<input type="checkbox" 
+			   name="bcRECV_<?php echo $arg['name']; ?>" 
+			   value="<?php echo $arg['val']; ?>"
+			   <?php 
+				if($arg['selected']==$arg['val']){ echo "checked"; } ?> />
+		<span></span>
+		<?php if ($label!=''){ echo "<label>".__($label,'betarecaptcha')."</label>"; } ?>
+	</label>
+</div>
+<?php
+}
 
 
 ?>

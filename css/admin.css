@@ -30,16 +30,64 @@
 	line-height: 19px;
 }
 
+#bcALG_wrapper .regular-text{
+	padding: 5px 20px;
+	width: 100%;
+	border: 3px solid #0085ba;
+	color: #0085ba;
+	font-weight: bold;
+	margin: 20px 0px;
+}
+
+
+
+/* head */
+#bcALG_wrapper{
+	margin: 0px;
+	margin-left: -20px;
+	margin-top: -20px;
+}
+.bcALG_head{
+	width: 100%;
+	min-height: 130px;
+	padding: 50px 30px 30px 30px;
+	border-bottom: 1px solid #CDD2D8;
+	background-color: #fff;
+	box-sizing: border-box;
+}
+
+#bcALG_wrapper .wrap{
+	box-sizing: border-box;
+	padding: 0px 30px;
+}
+
+/* content */
+
+.bcALG_explan{
+	margin: 20px 0px;
+	padding: 0px;
+	list-style-type: none;
+}
+.bcALG_explan li{
+	margin: 0px;
+	margin-bottom: 10px;
+	background-color: #fff;
+	border: 1px solid #CDD2D8;
+	border-radius: 3px;
+	padding: 15px 20px;
+
+
+}
+
 /* the plugin page footer */
 
 div.bcALG_footer{
 	overflow: hidden;
 	margin-top: 100px;
 	padding: 25px;
-	margin-right: 20px;
-	border: 1px solid #D6D6D6;
-    background-color: #fff;
-    border-radius: 3px;
+	border-top: 1px solid #D6D6D6;
+	border-bottom: 1px solid #D6D6D6;
+	background-color: #fff;
 	color: #888 !important;
 }
 
@@ -50,18 +98,16 @@ div.bcALG_footer h2{
 	margin: 0px;
 	padding: 0px;
 	margin-bottom: 20px;
-	color: #494949;
+	color: #0085ba;
 }
 
 div.bcALG_footer h2 span{
 	font-weight: 100;
-	color: #0085ba;
+	color: #494949;
 }
 
 ul.bcALG_plugins{
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: auto auto;
+    display: block;
     margin-bottom: 30px;
 }
 
@@ -82,7 +128,7 @@ ul.bcALG_plugins li h3{
     background-color: #F5F5F5;
     padding: 20px;
     border-radius: 3px;
-    border: 1px solid #D6D6D6;
+    border: 3px solid #0085ba;
     margin-bottom: 20px;
     
 }
@@ -120,7 +166,7 @@ ul.bcALG_mailingform input:valid+label{
 	top: -5px;
 	left: 0px;
 	font-size: 13px;
-	color: #464646;
+	color: #0085ba;
 	transition: all 0.3s ease-in-out;
 	pointer-events: none;
 }
@@ -139,7 +185,8 @@ ul.bcALG_mailingform input[type="submit"]{
 	margin: 0px !important;
 	margin-top: 20px !important;
 	border-radius: 3px;
-	background: #0085ba;
+	background-color: #0085ba !important;
+	border: 1px solid #0085ba;
 	color: #fff;
 	padding: 10px 15px !important;
 }
