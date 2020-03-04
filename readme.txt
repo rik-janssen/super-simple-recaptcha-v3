@@ -5,7 +5,7 @@ Donate link: https://www.paypal.com/donate/?token=y9x2_N0_18pSbdHE9l9jivsqB3aTKg
 Requires at least: 5.2
 Tested up to: 5.3
 Requires PHP: 5.8
-Stable tag: 1.1
+Stable tag: 1.2
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -26,6 +26,10 @@ Very simple!
 1. Slap in your site key and you are good to go.
 
 == Changelog ==
+
+= 1.2 = 
+* Small bug fix
+
 = 1.1 =
 * Fully redesigned the gui
 * Added a 'hide' checkbox for the label
