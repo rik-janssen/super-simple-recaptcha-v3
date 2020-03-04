@@ -77,76 +77,45 @@
 <?php 
 /* ------------------------ */
 /* THE FOOTER.              */
+$u = wp_get_current_user();
 
-$bcALG_my_plugins = array(
-    array(
-        'slug'=>'rebranded-pro-the-agency-toolkit',
-        'name'=>'Re:Branded Pro | The Agency Toolkit',
-        'features'=>'https://betacore.tech/plugins/rebranded-pro-agency-toolkit/',
-        'content'=>'This is a total rebranding package for the WordPress admin built for for agencies, designers and website builders. This plugin also protects essential parts of the WordPress installation in order to create an awesome user experience for the client on the WP-admin dashboard. My other plugins (Super Simple Age Gate, Super Simple Site Offline, Simple Analytics Tag) hook right in! So it feels as if they are part of Re:Branded. Or are they?' )
-);
-
-// get user info for the signup form.
-$bcuser = wp_get_current_user();
-
-// get the slug of this plugin
-$get_slug = explode('/', plugin_basename( __FILE__ ));
 ?>
 <div class="bcALG_footer">
 
-<div class="bcALG_mailinglist">
-<form action="https://oneweekendwebsite.us20.list-manage.com/subscribe/post?u=72e22e9c5e66e05351f6c92af&amp;id=87b9e508b0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-<h2>Are you running Wordpress inefficient? <span>Betacore is developing plugins to fix that!</span></h2>
-<p class="bcALG_intro">Get an email when new plugins arrive! The only thing you'll have to do is subscribe to the mailing list now! Also I'll reach out to figure out what you need in existing and new plugins. The mail frequency is around once a month and I'd be happy to welcome you in my inbox. Cheers, Rik.</p>
-<ul class="bcALG_mailingform">
-    <li>
-        
+    <div class="bcALG_mailinglist">
+        <form action="https://oneweekendwebsite.us20.list-manage.com/subscribe/post?u=72e22e9c5e66e05351f6c92af&amp;id=87b9e508b0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            <h2>Get an email when new plugins or important updates arrive <span>and run an efficient Wordpress site!</span></h2>
+            <p>Just subscribe to the Beta mailinglist and be informed. Don't worry, I don't like spam either but if you'd like some usefull nuggets of information in your inbox, I'd reccommend you join the list. I'm not biased at all. I know. Right?</p><br />
+            <ul class="bcALG_mailingform">
+                <li>
+                    
+			
+					<input type="text" value="<?php echo ucfirst($u->data->user_nicename); ?>" name="FNAME" class="" id="mce-FNAME" required>
+					<label for="mce-FNAME">First Name</label>
+                </li>
+                <li>
+                    
+                    
+					
+					<input type="text" value="<?php echo $u->data->user_email; ?>" name="EMAIL" class="required email" id="mce-EMAIL" required/>
+					<label for="mce-EMAIL">Email Address</label>
+                </li>
+                <li>
+					<input type="submit" value="Join!" name="subscribe" id="mc-embedded-subscribe" />
+                </li>
+				
 
-        <input type="text" value="<?php echo $bcuser->display_name; ?>" name="FNAME" class="" id="mce-FNAME" required>
-        <label for="mce-FNAME">First Name</label>
-    </li>
-    <li>
-        
-        
-        
-        <input type="text" value="<?php echo $bcuser->user_email; ?>"" name="EMAIL" class="required email" id="mce-EMAIL" required/>
-        <label for="mce-EMAIL">Email Address</label>
-    </li>
-    <li>
-        <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" />
-    </li>
-    
-
-<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_72e22e9c5e66e05351f6c92af_87b9e508b0" tabindex="-1" value=""></div>
-
-
-</ul>
-</form>
-</div>
-
-<ul class="bcALG_plugins">
-<?php foreach($bcALG_my_plugins as $bc_id => $bc_value){ 
-if($get_slug[0] != $bc_value['slug']){
-?>
-<li>
-    <img src="<?php echo plugin_dir_url( __DIR__ ).'img/'.$bc_value['slug'].'.png'; ?>" title="<?php echo $bc_value['name']; ?> by Beta" class="bcALG_icon" />
-    <h3><a href="https://wordpress.org/plugins/<?php echo $bc_value['slug']; ?>/" target="_blank"><?php echo $bc_value['name']; ?></a></h3>
-    <p><?php echo $bc_value['content']; ?></p>
-    <a href="https://wordpress.org/plugins/<?php echo $bc_value['slug']; ?>/" class="button" target="_blank"><?php _e('Plugin page'); ?></a>
-    <?php if (isset($bc_value['features'])){ ?>
-    <a href="<?php echo $bc_value['features']; ?>" class="button" target="_blank"><?php _e('Features'); ?></a>
-    <?php } ?>
-    <a href="<?php bloginfo('wpurl'); ?>/wp-admin/plugin-install.php?tab=plugin-information&plugin=<?php echo $bc_value['slug']; ?>&TB_iframe=false" class="button button-primary" target="_blank"><?php _e('Install'); ?></a>
-</li>
-
-<?php }} ?>
-</ul>
+    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_72e22e9c5e66e05351f6c92af_87b9e508b0" tabindex="-1" value=""></div>
 
 
-<div class="bcALG_logobar">
-<a href="https://beta-media.com/super-simple-site-gate-wordpress-plugin/"><img src="<?php echo plugin_dir_url( __DIR__ ); ?>img/betalogo-b.png" /></a>
-<p class="bcALG_url"><span>By:</span> <a href="https://www.betacore.tech" target="_blank">www.betacore.tech</a></p>
-</div>
-</div>
+            </ul>
+        </form>
+    </div>
+
+
+	<div class="bcALG_logobar">
+    <a href="https://betacore.tech"><img src="<?php echo plugin_dir_url( __DIR__ ); ?>img/betalogo-b.png" /></a>
+    <p class="bcALG_url"><span>By:</span> <a href="https://www.betacore.tech" target="_blank">www.betacore.tech</a></p>
+	</div>
 </div>
