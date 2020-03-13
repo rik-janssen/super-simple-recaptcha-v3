@@ -3,7 +3,7 @@ Contributors: @betacore
 Tags: recaptcha, contactform7, spam
 Donate link: https://betacore.tech/donate
 Requires at least: 5.2
-Tested up to: 5.3
+Tested up to: 5.4
 Requires PHP: 5.8
 Stable tag: 1.2
 License: GPLv3
