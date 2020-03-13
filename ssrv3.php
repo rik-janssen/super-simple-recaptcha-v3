@@ -17,7 +17,6 @@ include_once('inc/functions-nav.php'); // the wp-admin navigation
 include_once('inc/functions-wp-admin.php'); // the wp-admin navigation
 include_once('inc/functions-recaptcha.php'); // the meat of the plugin
 
-
 /* make the plugin page row better */
 
 function bcRECV_pl_links( $links ) {
