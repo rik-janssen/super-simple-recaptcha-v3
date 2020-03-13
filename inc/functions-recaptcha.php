@@ -20,10 +20,11 @@ grecaptcha.ready(function() {
     <?php if (get_option( 'bcRECV_google_recaptcha_label' )==1){?>
     <style>
         #rc-anchor-container, .rc-anchor, .grecaptcha-badge{
-            z-index: -99999 !important;
+            z-index: -999999 !important;
             position: fixed !important;
             width: 0px !important;
             height: 0px !important;
+            opacity: 0;
         }
     </style>
     <?php } ?>
