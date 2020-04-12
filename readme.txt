@@ -1,11 +1,11 @@
 === Super Simple Recaptcha V3 ===
 Contributors: @betacore
 Tags: recaptcha, contactform7, spam
-Donate link: https://betacore.tech/donate
+Donate link: https://www.patreon.com/betadev
 Requires at least: 5.2
 Tested up to: 5.4
 Requires PHP: 5.8
-Stable tag: 1.2
+Stable tag: 1.2.1
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -22,10 +22,17 @@ Got spammers? Add Recaptcha V3 in an instant! Works for any contact form. Uses G
 = How simple is it? =
 Very simple!
 
+= Do I need reCAPTCHA credentials? =
+Yes, you have. Fetch them at google.com/recaptcha.
+But everything will be explained when you install the plugin.
+
 == Screenshots ==
 1. Slap in your site key and you are good to go.
 
 == Changelog ==
+
+= 1.2.1 = 
+* WP 5.4 tested
 
 = 1.2 = 
 * Small bug fix
