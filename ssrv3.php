@@ -3,7 +3,7 @@
 * Plugin Name: Super Simple Recaptcha V3
 * Plugin URI: https://betacore.tech/plugins/simple-analytics-tag-for-wordpress/
 * Description: Got spammers? Add Recaptcha V3 in an instant! Works for any contact form. Uses Google Recaptcha V3. A how-to is also included to get you started.
-* Version: 1.2.1
+* Version: 1.2.4
 * Author: Rik Janssen (Beta)
 * Author URI: https://betacore.tech/
 * Text Domain: betarecaptcha
@@ -13,9 +13,8 @@
 //betaanalytics
 
 /* Includes */
-include_once('inc/functions-nav.php'); // the wp-admin navigation
-include_once('inc/functions-wp-admin.php'); // the wp-admin navigation
-include_once('inc/functions-recaptcha.php'); // the meat of the plugin
+include_once('assets/load.php'); // the wp-admin navigation
+
 
 /* make the plugin page row better */
 
